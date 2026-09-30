@@ -21,8 +21,4 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
         elements.forEach((element) => element.classList.add('visible'));
     }
-
-    if (window.lucide) {
-        window.lucide.createIcons();
-    }
 });

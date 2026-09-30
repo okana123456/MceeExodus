@@ -11,13 +11,13 @@ require __DIR__ . '/includes/header.php';
         <h1>Every room deserves the right energy.</h1>
         <p class="hero-copy">MC Exodus brings confident hosting, sharp comedy and thoughtful crowd engagement to corporate functions, weddings, launches and live campaigns.</p>
         <div class="action-row">
-            <a class="button" href="/book.php">Check availability <i data-lucide="arrow-up-right"></i></a>
-            <a class="button button-secondary" href="/media.php">Watch MC Exodus <i data-lucide="play"></i></a>
+            <a class="button" href="/book.php">Check availability</a>
+            <a class="button button-secondary" href="/media.php">Watch MC Exodus</a>
         </div>
         <div class="hero-proof">
-            <span><i data-lucide="mic-2"></i> Corporate and social events</span>
-            <span><i data-lucide="message-circle"></i> English and Swahili delivery</span>
-            <span><i data-lucide="map-pin"></i> Available across Kenya</span>
+            <span>Corporate and social events</span>
+            <span>English and Swahili delivery</span>
+            <span>Available across Kenya</span>
         </div>
     </div>
 </section>
@@ -26,13 +26,13 @@ require __DIR__ . '/includes/header.php';
     <div class="container">
         <div class="section-head reveal">
             <div><p class="eyebrow">What MC Exodus does</p><h2>Professional when the moment demands it. Effortless when the room needs to breathe.</h2></div>
-            <a class="text-link" href="/services.php">View all services <i data-lucide="arrow-right"></i></a>
+            <a class="text-link" href="/services.php">View all services</a>
         </div>
         <div class="service-grid reveal">
-            <article class="service-card"><i class="service-icon" data-lucide="building-2"></i><h3>Corporate MC</h3><p>Clear programme management, speaker transitions and audience engagement for professional functions.</p></article>
-            <article class="service-card"><i class="service-icon" data-lucide="party-popper"></i><h3>Weddings</h3><p>A warm, lively celebration that respects the couple, their families and the rhythm of the day.</p></article>
-            <article class="service-card"><i class="service-icon" data-lucide="laugh"></i><h3>Comedy</h3><p>Live comedy and tailored entertainment built around the audience, occasion and brand environment.</p></article>
-            <article class="service-card"><i class="service-icon" data-lucide="messages-square"></i><h3>Moderation</h3><p>Confident panels, interviews and conversations that stay focused while still feeling human.</p></article>
+            <article class="service-card"><img class="service-photo" src="/assets/img/corporate-event-group.jpg" alt="MC Exodus with professionals at a corporate event" loading="lazy"><h3>Corporate MC</h3><p>Clear programme management, speaker transitions and audience engagement for professional functions.</p></article>
+            <article class="service-card"><img class="service-photo" src="/assets/img/wedding-crowd-one.jpg" alt="Wedding guests during an event hosted by MC Exodus" loading="lazy"><h3>Weddings</h3><p>A warm, lively celebration that respects the couple, their families and the rhythm of the day.</p></article>
+            <article class="service-card"><img class="service-photo" src="/assets/img/character-blue.jpg" alt="MC Exodus performing a comedy character" loading="lazy"><h3>Comedy</h3><p>Live comedy and tailored entertainment built around the audience, occasion and brand environment.</p></article>
+            <article class="service-card"><img class="service-photo" src="/assets/img/corporate-partnership.jpg" alt="MC Exodus during a professional discussion" loading="lazy"><h3>Moderation</h3><p>Confident panels, interviews and conversations that stay focused while still feeling human.</p></article>
         </div>
     </div>
 </section>
@@ -57,7 +57,7 @@ require __DIR__ . '/includes/header.php';
 
 <section class="band">
     <div class="container">
-        <div class="section-head reveal"><div><p class="eyebrow">Seen in the room</p><h2>Real events. Real audiences. Real connection.</h2></div><a class="text-link" href="/media.php">Explore the media hub <i data-lucide="arrow-right"></i></a></div>
+        <div class="section-head reveal"><div><p class="eyebrow">Seen in the room</p><h2>Real events. Real audiences. Real connection.</h2></div><a class="text-link" href="/media.php">Explore the media hub</a></div>
         <div class="media-strip reveal">
             <a class="media-tile" href="/services.php#weddings"><img src="/assets/img/wedding-crowd-one.jpg" alt="Guests enjoying an event hosted by MC Exodus" loading="lazy"><span>Wedding celebrations</span></a>
             <a class="media-tile" href="/media.php"><img src="/assets/img/studio-appearance.jpg" alt="MC Exodus during a studio appearance" loading="lazy"><span>Studio appearances</span></a>
@@ -71,10 +71,10 @@ require __DIR__ . '/includes/header.php';
     <div class="container">
         <div class="section-head reveal"><div><p class="eyebrow">Follow the story</p><h2>New performances, clips and announcements.</h2></div></div>
         <div class="social-panel reveal">
-            <a href="<?= e($site['socials']['youtube']) ?>" target="_blank" rel="noopener"><i data-lucide="youtube"></i><strong>YouTube</strong></a>
-            <a href="<?= e($site['socials']['tiktok']) ?>" target="_blank" rel="noopener"><i data-lucide="music-2"></i><strong>TikTok</strong></a>
-            <a href="<?= e($site['socials']['instagram']) ?>" target="_blank" rel="noopener"><i data-lucide="instagram"></i><strong>Instagram</strong></a>
-            <a href="<?= e($site['socials']['facebook']) ?>" target="_blank" rel="noopener"><i data-lucide="facebook"></i><strong>Facebook</strong></a>
+            <a href="<?= e($site['socials']['youtube']) ?>" target="_blank" rel="noopener"><img src="/assets/img/studio-appearance.jpg" alt="MC Exodus studio appearance" loading="lazy"><strong>YouTube</strong></a>
+            <a href="<?= e($site['socials']['tiktok']) ?>" target="_blank" rel="noopener"><img src="/assets/img/character-closeup.jpg" alt="MC Exodus comedy character" loading="lazy"><strong>TikTok</strong></a>
+            <a href="<?= e($site['socials']['instagram']) ?>" target="_blank" rel="noopener"><img src="/assets/img/portrait-outdoor.jpg" alt="MC Exodus portrait" loading="lazy"><strong>Instagram</strong></a>
+            <a href="<?= e($site['socials']['facebook']) ?>" target="_blank" rel="noopener"><img src="/assets/img/wedding-mc.jpg" alt="MC Exodus hosting a wedding" loading="lazy"><strong>Facebook</strong></a>
         </div>
     </div>
 </section>

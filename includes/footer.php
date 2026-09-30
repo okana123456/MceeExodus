@@ -21,11 +21,7 @@
         </div>
         <div>
             <h2>Follow</h2>
-            <div class="social-links">
-                <?php foreach ($site['socials'] as $network => $url): ?>
-                    <a href="<?= e($url) ?>" target="_blank" rel="noopener" aria-label="MC Exodus on <?= e(ucfirst($network)) ?>"><i data-lucide="<?= $network === 'facebook' ? 'facebook' : ($network === 'youtube' ? 'youtube' : ($network === 'instagram' ? 'instagram' : 'music-2')) ?>"></i></a>
-                <?php endforeach; ?>
-            </div>
+            <div class="social-links"><?php foreach ($site['socials'] as $network => $url): ?><a href="<?= e($url) ?>" target="_blank" rel="noopener"><?= e(ucfirst($network)) ?></a><?php endforeach; ?></div>
         </div>
     </div>
     <div class="footer-base"><span>&copy; <?= date('Y') ?> MC Exodus. All rights reserved.</span><span>Built for memorable rooms and meaningful moments.</span></div>

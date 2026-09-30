@@ -23,7 +23,6 @@ $canonicalPath = $canonicalPath ?? basename($_SERVER['PHP_SELF'] ?? 'index.php')
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/site.css?v=1">
-    <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js" defer></script>
     <script type="application/ld+json"><?= json_encode([
         '@context' => 'https://schema.org',
         '@type' => 'Person',
@@ -42,7 +41,7 @@ $canonicalPath = $canonicalPath ?? basename($_SERVER['PHP_SELF'] ?? 'index.php')
             <span class="brand-mark">EX</span>
             <span><strong>MC EXODUS</strong><small>MC · COMEDIAN · HOST</small></span>
         </a>
-        <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><i data-lucide="menu"></i></button>
+        <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">Menu</button>
         <nav class="main-nav" aria-label="Main navigation">
             <a class="<?= $pageKey === 'home' ? 'active' : '' ?>" href="/index.php">Home</a>
             <a class="<?= $pageKey === 'about' ? 'active' : '' ?>" href="/about.php">About</a>
