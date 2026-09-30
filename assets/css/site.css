@@ -27,7 +27,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .site-header { position: sticky; z-index: 100; top: 0; background: rgba(255,255,255,.97); border-bottom: 1px solid var(--line); }
 .nav-wrap { width: min(calc(100% - 40px), var(--max)); min-height: 76px; margin: auto; display: flex; align-items: center; justify-content: space-between; gap: 28px; }
 .brand { display: inline-flex; align-items: center; gap: 11px; min-width: max-content; }
-.brand-mark { display: grid; place-items: center; width: 42px; height: 42px; color: var(--white); background: var(--orange); border-radius: 50%; font-size: 13px; font-weight: 800; }
+.brand-mark-image { width: 46px; height: 46px; flex: 0 0 46px; object-fit: cover; border: 1px solid var(--line); border-radius: 50%; background: var(--white); }
 .brand strong, .brand small { display: block; letter-spacing: 0; }
 .brand strong { font-size: 17px; line-height: 1.1; }
 .brand small { margin-top: 5px; color: var(--muted); font-size: 9px; font-weight: 700; }
@@ -104,6 +104,7 @@ h3 { margin-bottom: 10px; font-size: 20px; }
 .image-story figure { position: relative; min-height: 520px; margin: 0; overflow: hidden; border-radius: var(--radius); }
 .image-story figure:nth-child(2) { min-height: 430px; margin-top: 90px; }
 .image-story img { position: absolute; inset: 0; height: 100%; object-fit: cover; }
+.image-story figure:nth-child(2) img { object-position: center 8%; }
 .image-story figcaption { position: absolute; right: 16px; bottom: 16px; left: 16px; padding: 13px 15px; color: var(--white); background: rgba(16,24,32,.87); font-size: 12px; font-weight: 700; }
 
 .media-strip { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }

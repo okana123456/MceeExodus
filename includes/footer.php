@@ -2,7 +2,7 @@
 <footer class="site-footer">
     <div class="footer-main">
         <div>
-            <a class="brand brand-footer" href="/index.php"><span class="brand-mark">EX</span><span><strong>MC EXODUS</strong><small>MC · COMEDIAN · HOST</small></span></a>
+            <a class="brand brand-footer" href="/index.php"><img class="brand-mark-image" src="/assets/img/mc-exodus-icon.png" alt=""><span><strong>MC EXODUS</strong><small>MC · COMEDIAN · HOST</small></span></a>
             <p>Confident hosting, quick wit and a room that stays connected from the opening line to the final applause.</p>
         </div>
         <div>

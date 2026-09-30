@@ -19,6 +19,8 @@ $canonicalPath = $canonicalPath ?? basename($_SERVER['PHP_SELF'] ?? 'index.php')
     <meta property="og:description" content="<?= e($pageDescription) ?>">
     <meta property="og:image" content="<?= e(site_url('assets/img/corporate-partnership.jpg')) ?>">
     <meta property="og:url" content="<?= e(site_url($canonicalPath)) ?>">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/mc-exodus-icon.png">
+    <link rel="apple-touch-icon" href="/assets/img/mc-exodus-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -38,7 +40,7 @@ $canonicalPath = $canonicalPath ?? basename($_SERVER['PHP_SELF'] ?? 'index.php')
 <header class="site-header">
     <div class="nav-wrap">
         <a class="brand" href="/index.php" aria-label="MC Exodus home">
-            <span class="brand-mark">EX</span>
+            <img class="brand-mark-image" src="/assets/img/mc-exodus-icon.png" alt="">
             <span><strong>MC EXODUS</strong><small>MC · COMEDIAN · HOST</small></span>
         </a>
         <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">Menu</button>
