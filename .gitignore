@@ -1,0 +1,6 @@
+/includes/config.local.php
+/admin/config.php
+/.idea/
+/.vscode/
+.DS_Store
+Thumbs.db

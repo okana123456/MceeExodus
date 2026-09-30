@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /
+
+# Development website: remove this block only when the permanent domain is ready.
