@@ -1,10 +1,13 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/rudderdatanalyti/mcexodus.rudderdatanalytics.co.ke/
+    - export DEPLOYPATH=/home/rudderdatanalyti/mcexodus.com/
+    - export OLDDEPLOYPATH=/home/rudderdatanalyti/mcexodus.rudderdatanalytics.co.ke/
     - /bin/mkdir -p $DEPLOYPATH
     - /bin/cp -R assets includes live admin $DEPLOYPATH
     - /bin/mkdir -p $DEPLOYPATH/data
     - /usr/bin/test -f $DEPLOYPATH/data/live.json || /bin/cp data/live.json $DEPLOYPATH/data/live.json
     - /bin/cp data/.htaccess $DEPLOYPATH/data/.htaccess
-    - /bin/cp *.php *.txt .htaccess $DEPLOYPATH
+    - /bin/cp *.php *.txt sitemap.xml .htaccess $DEPLOYPATH
+    - /bin/mkdir -p $OLDDEPLOYPATH
+    - /bin/cp old-domain-redirect.htaccess $OLDDEPLOYPATH/.htaccess

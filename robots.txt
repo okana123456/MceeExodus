@@ -1,4 +1,8 @@
 User-agent: *
-Disallow: /
+Allow: /
+Disallow: /admin/
+Disallow: /data/
+Disallow: /includes/
+Disallow: /live/
 
-# Development website: remove this block only when the permanent domain is ready.
+Sitemap: https://mcexodus.com/sitemap.xml
