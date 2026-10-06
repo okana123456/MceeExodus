@@ -12,13 +12,18 @@ $canonicalPath = $canonicalPath ?? basename($_SERVER['PHP_SELF'] ?? 'index.php')
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?= e($pageTitle) ?></title>
     <meta name="description" content="<?= e($pageDescription) ?>">
-    <meta name="robots" content="noindex, nofollow">
+    <meta name="robots" content="index, follow, max-image-preview:large">
     <link rel="canonical" href="<?= e(site_url($canonicalPath)) ?>">
     <meta property="og:type" content="website">
+    <meta property="og:site_name" content="MC Exodus">
     <meta property="og:title" content="<?= e($pageTitle) ?>">
     <meta property="og:description" content="<?= e($pageDescription) ?>">
     <meta property="og:image" content="<?= e(site_url('assets/img/corporate-partnership.jpg')) ?>">
     <meta property="og:url" content="<?= e(site_url($canonicalPath)) ?>">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="<?= e($pageTitle) ?>">
+    <meta name="twitter:description" content="<?= e($pageDescription) ?>">
+    <meta name="twitter:image" content="<?= e(site_url('assets/img/corporate-partnership.jpg')) ?>">
     <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/mc-exodus-icon.png">
     <link rel="apple-touch-icon" href="/assets/img/mc-exodus-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">

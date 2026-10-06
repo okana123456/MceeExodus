@@ -1,5 +1,18 @@
 Options -Indexes
 
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Keep one permanent public address for search engines and shared links.
+    RewriteCond %{HTTP_HOST} ^www\.mcexodus\.com$ [NC,OR]
+    RewriteCond %{HTTP_HOST} ^mcexodus\.rudderdatanalytics\.co\.ke$ [NC]
+    RewriteRule ^ https://mcexodus.com%{REQUEST_URI} [R=301,L]
+
+    RewriteCond %{HTTP_HOST} ^mcexodus\.com$ [NC]
+    RewriteCond %{HTTPS} !=on
+    RewriteRule ^ https://mcexodus.com%{REQUEST_URI} [R=301,L]
+</IfModule>
+
 <IfModule mod_headers.c>
     Header always set X-Content-Type-Options "nosniff"
     Header always set X-Frame-Options "SAMEORIGIN"
