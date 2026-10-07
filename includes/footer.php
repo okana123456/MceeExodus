@@ -22,11 +22,18 @@
         <div>
             <h2>Contact</h2>
             <a href="tel:<?= e($site['preferred_phone_href']) ?>"><?= e($site['preferred_phone']) ?></a>
-            <a href="<?= e($site['whatsapp_href']) ?>" target="_blank" rel="noopener">WhatsApp bookings</a>
+            <a href="<?= e($site['whatsapp_href']) ?>" target="_blank" rel="noopener"><i class="bi bi-whatsapp" aria-hidden="true"></i> WhatsApp bookings</a>
             <a href="mailto:<?= e($site['booking_email']) ?>"><?= e($site['booking_email']) ?></a>
+            <a href="mailto:<?= e($site['partnership_email']) ?>"><?= e($site['partnership_email']) ?></a>
             <p><?= e($site['office']) ?></p>
             <h2 class="footer-follow-title">Follow</h2>
-            <div class="social-links"><?php foreach ($site['socials'] as $network => $url): ?><a href="<?= e($url) ?>" target="_blank" rel="noopener"><?= e(ucfirst($network)) ?></a><?php endforeach; ?></div>
+            <div class="social-links">
+                <a href="<?= e($site['socials']['whatsapp']) ?>" target="_blank" rel="noopener" aria-label="WhatsApp" title="WhatsApp"><i class="bi bi-whatsapp" aria-hidden="true"></i></a>
+                <a href="<?= e($site['socials']['facebook']) ?>" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook"><i class="bi bi-facebook" aria-hidden="true"></i></a>
+                <a href="<?= e($site['socials']['instagram']) ?>" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+                <a href="<?= e($site['socials']['youtube']) ?>" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube"><i class="bi bi-youtube" aria-hidden="true"></i></a>
+                <a href="<?= e($site['socials']['tiktok']) ?>" target="_blank" rel="noopener" aria-label="TikTok" title="TikTok"><i class="bi bi-tiktok" aria-hidden="true"></i></a>
+            </div>
         </div>
     </div>
     <div class="footer-base"><span>&copy; <?= date('Y') ?> MC Exodus. All rights reserved.</span><span>Built for memorable rooms and meaningful moments.</span></div>

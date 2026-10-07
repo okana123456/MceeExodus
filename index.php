@@ -71,10 +71,10 @@ require __DIR__ . '/includes/header.php';
     <div class="container">
         <div class="section-head reveal"><div><p class="eyebrow">Follow the story</p><h2>New performances, clips and announcements.</h2></div></div>
         <div class="social-panel reveal">
-            <a href="<?= e($site['socials']['youtube']) ?>" target="_blank" rel="noopener"><img src="/assets/img/studio-appearance.jpg" alt="MC Exodus studio appearance" loading="lazy"><strong>YouTube</strong></a>
-            <a href="<?= e($site['socials']['tiktok']) ?>" target="_blank" rel="noopener"><img src="/assets/img/character-closeup.jpg" alt="MC Exodus comedy character" loading="lazy"><strong>TikTok</strong></a>
-            <a href="<?= e($site['socials']['instagram']) ?>" target="_blank" rel="noopener"><img src="/assets/img/portrait-outdoor.jpg" alt="MC Exodus portrait" loading="lazy"><strong>Instagram</strong></a>
-            <a href="<?= e($site['socials']['facebook']) ?>" target="_blank" rel="noopener"><img src="/assets/img/wedding-mc.jpg" alt="MC Exodus hosting a wedding" loading="lazy"><strong>Facebook</strong></a>
+            <a href="<?= e($site['socials']['youtube']) ?>" target="_blank" rel="noopener"><img src="/assets/img/studio-appearance.jpg" alt="MC Exodus studio appearance" loading="lazy"><strong><i class="bi bi-youtube" aria-hidden="true"></i> YouTube</strong></a>
+            <a href="<?= e($site['socials']['tiktok']) ?>" target="_blank" rel="noopener"><img src="/assets/img/character-closeup.jpg" alt="MC Exodus comedy character" loading="lazy"><strong><i class="bi bi-tiktok" aria-hidden="true"></i> TikTok</strong></a>
+            <a href="<?= e($site['socials']['instagram']) ?>" target="_blank" rel="noopener"><img src="/assets/img/portrait-outdoor.jpg" alt="MC Exodus portrait" loading="lazy"><strong><i class="bi bi-instagram" aria-hidden="true"></i> Instagram</strong></a>
+            <a href="<?= e($site['socials']['facebook']) ?>" target="_blank" rel="noopener"><img src="/assets/img/wedding-mc.jpg" alt="MC Exodus hosting a wedding" loading="lazy"><strong><i class="bi bi-facebook" aria-hidden="true"></i> Facebook</strong></a>
         </div>
     </div>
 </section>
