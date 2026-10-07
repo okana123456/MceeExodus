@@ -20,7 +20,12 @@
             <a href="/live/">Current live link</a>
         </div>
         <div>
-            <h2>Follow</h2>
+            <h2>Contact</h2>
+            <a href="tel:<?= e($site['preferred_phone_href']) ?>"><?= e($site['preferred_phone']) ?></a>
+            <a href="<?= e($site['whatsapp_href']) ?>" target="_blank" rel="noopener">WhatsApp bookings</a>
+            <a href="mailto:<?= e($site['booking_email']) ?>"><?= e($site['booking_email']) ?></a>
+            <p><?= e($site['office']) ?></p>
+            <h2 class="footer-follow-title">Follow</h2>
             <div class="social-links"><?php foreach ($site['socials'] as $network => $url): ?><a href="<?= e($url) ?>" target="_blank" rel="noopener"><?= e(ucfirst($network)) ?></a><?php endforeach; ?></div>
         </div>
     </div>

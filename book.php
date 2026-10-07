@@ -30,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($fields['Event type'] === '' || $fields['Proposed date'] === '' || $fields['Venue and location'] === '') $errors[] = 'Please complete the event type, date and location.';
     if (strlen($fields['Additional information']) > 3000) $errors[] = 'Please shorten the additional information to 3,000 characters.';
     if (empty($errors)) {
-        $success = send_site_mail('New MC Exodus booking request', $fields, $fields['Email']);
+        $success = send_site_mail('New MC Exodus booking request', $fields, $fields['Email'], $site['booking_email']);
         if (!$success) $errors[] = 'The request could not be sent. Please use the contact page while the email connection is checked.';
     }
 }
@@ -58,6 +58,6 @@ require __DIR__ . '/includes/header.php';
             <div class="field field-full"><button class="button" type="submit">Send booking request</button><p class="form-note">Submitting this form does not reserve the date. Availability is confirmed by the MC Exodus team.</p></div>
         </form>
     </div>
-    <aside class="side-panel"><p class="eyebrow">What happens next</p><h3>A clear response, privately handled.</h3><p>The team reviews the date, location, audience and service requirements. If the event is suitable and the date is available, you will receive the next steps and a quotation.</p><p>Your full calendar and other clients' information are never displayed publicly.</p></aside>
+    <aside class="side-panel"><p class="eyebrow">What happens next</p><h3>A clear response, privately handled.</h3><p>The team reviews the date, location, audience and service requirements. If the event is suitable and the date is available, you will receive the next steps and a quotation.</p><p><strong>Booking line</strong><br><a href="tel:<?= e($site['booking_phone_href']) ?>"><?= e($site['booking_phone']) ?></a></p><p><strong>WhatsApp</strong><br><a href="<?= e($site['whatsapp_href']) ?>" target="_blank" rel="noopener"><?= e($site['whatsapp']) ?></a></p><p><strong>Booking email</strong><br><a href="mailto:<?= e($site['booking_email']) ?>"><?= e($site['booking_email']) ?></a></p><p>Your full calendar and other clients' information are never displayed publicly.</p></aside>
 </div></section>
 <?php require __DIR__ . '/includes/footer.php'; ?>

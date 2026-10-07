@@ -5,7 +5,16 @@ $site = [
     'name' => 'MC Exodus',
     'tagline' => 'MC. Comedian. Event Host.',
     'base_url' => 'https://mcexodus.com',
-    'notification_email' => 'admin@rudderdatanalytics.co.ke',
+    'notification_email' => 'mcexoduscomedy@gmail.com',
+    'booking_email' => 'mcexoduscomedy@gmail.com',
+    'partnership_email' => 'mcexoduscomedy@gmail.com',
+    'booking_phone' => '0746 854 813',
+    'booking_phone_href' => '+254746854813',
+    'preferred_phone' => '0704 532 031',
+    'preferred_phone_href' => '+254704532031',
+    'whatsapp' => '+254 746 854 813',
+    'whatsapp_href' => 'https://wa.me/254746854813',
+    'office' => 'Utawala, Mihango',
     'socials' => [
         'facebook' => 'https://www.facebook.com/Mcexodus254/',
         'instagram' => 'https://www.instagram.com/mcexodus/',
@@ -49,9 +58,10 @@ function valid_csrf(?string $token): bool
     return is_string($token) && hash_equals(csrf_token(), $token);
 }
 
-function send_site_mail(string $subject, array $fields, string $replyTo): bool
+function send_site_mail(string $subject, array $fields, string $replyTo, ?string $recipient = null): bool
 {
     global $site;
+    $recipient = filter_var($recipient, FILTER_VALIDATE_EMAIL) ? $recipient : $site['notification_email'];
     $lines = [];
     foreach ($fields as $label => $value) {
         $clean = trim(preg_replace('/[\r\n]+/', ' ', (string) $value));
@@ -65,5 +75,5 @@ function send_site_mail(string $subject, array $fields, string $replyTo): bool
     if (filter_var($replyTo, FILTER_VALIDATE_EMAIL)) {
         $headers[] = 'Reply-To: ' . $replyTo;
     }
-    return mail($site['notification_email'], $subject, implode("\n", $lines), implode("\r\n", $headers));
+    return mail($recipient, $subject, implode("\n", $lines), implode("\r\n", $headers));
 }
