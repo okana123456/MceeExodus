@@ -11,6 +11,7 @@
             <a href="/services.php">Services</a>
             <a href="/media.php">Videos and media</a>
             <a href="/events.php">Upcoming events</a>
+            <a href="/market/">MC Exodus Market Place</a>
         </div>
         <div>
             <h2>Plan an event</h2>
@@ -18,6 +19,7 @@
             <a href="/tickets.php">Buy tickets</a>
             <a href="/contact.php">Contact the team</a>
             <a href="/live/">Current live link</a>
+            <a href="/market/post.php">Post an advert</a>
         </div>
         <div>
             <h2>Contact</h2>

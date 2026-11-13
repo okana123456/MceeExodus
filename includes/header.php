@@ -57,6 +57,7 @@ $canonicalPath = $canonicalPath ?? basename($_SERVER['PHP_SELF'] ?? 'index.php')
             <a class="<?= $pageKey === 'media' ? 'active' : '' ?>" href="/media.php">Media</a>
             <a class="<?= $pageKey === 'events' ? 'active' : '' ?>" href="/events.php">Events</a>
             <a class="<?= $pageKey === 'tickets' ? 'active' : '' ?>" href="/tickets.php">Tickets</a>
+            <a class="<?= $pageKey === 'market' ? 'active' : '' ?>" href="/market/">Market</a>
             <a class="<?= $pageKey === 'contact' ? 'active' : '' ?>" href="/contact.php">Contact</a>
             <a class="button button-small" href="/book.php">Book MC Exodus</a>
         </nav>

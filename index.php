@@ -37,6 +37,20 @@ require __DIR__ . '/includes/header.php';
     </div>
 </section>
 
+<section class="market-home-band">
+    <div class="container market-home-inner reveal">
+        <div>
+            <p class="eyebrow">Introducing MC Exodus Market Place</p>
+            <h2>Post it. Promote it. Sell it.</h2>
+            <p>Advertise vehicles, property, electronics, furniture, fashion, farm products and services to a growing audience.</p>
+        </div>
+        <div class="action-row">
+            <a class="button" href="/market/">Explore the market</a>
+            <a class="button button-market-outline" href="/market/post.php">Post an advert</a>
+        </div>
+    </div>
+</section>
+
 <section class="band band-soft">
     <div class="container split">
         <div class="split-image portrait reveal"><img src="/assets/img/wedding-mc.jpg" alt="MC Exodus entertaining guests during a wedding celebration" loading="lazy"></div>

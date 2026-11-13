@@ -8,6 +8,7 @@ $site = [
     'notification_email' => 'bookings@mcexodus.com',
     'booking_email' => 'bookings@mcexodus.com',
     'partnership_email' => 'partnerships@mcexodus.com',
+    'marketplace_email' => 'partnerships@mcexodus.com',
     'booking_phone' => '0746 854 813',
     'booking_phone_href' => '+254746854813',
     'preferred_phone' => '0704 532 031',
@@ -21,6 +22,39 @@ $site = [
         'instagram' => 'https://www.instagram.com/mcexodus/',
         'youtube' => 'https://www.youtube.com/@mcexoduscomedy',
         'tiktok' => 'https://www.tiktok.com/@mcexodus',
+    ],
+];
+
+$marketplace = [
+    'name' => 'MC Exodus Market Place',
+    'categories' => [
+        'Vehicles',
+        'Property',
+        'Phones and Electronics',
+        'Home and Furniture',
+        'Fashion and Beauty',
+        'Agriculture',
+        'Services and Business',
+    ],
+    'packages' => [
+        'quick' => [
+            'name' => 'Quick Post',
+            'duration' => '1 day',
+            'price' => 150,
+            'description' => 'A short, focused listing for fast-moving items and limited offers.',
+        ],
+        'weekly' => [
+            'name' => 'Weekly Deal',
+            'duration' => '7 days',
+            'price' => 500,
+            'description' => 'Seven days of marketplace visibility with category and search placement.',
+        ],
+        'featured' => [
+            'name' => 'Featured Deal',
+            'duration' => '30 days',
+            'price' => 1500,
+            'description' => 'Priority placement for high-value goods, property, vehicles and businesses.',
+        ],
     ],
 ];
 
